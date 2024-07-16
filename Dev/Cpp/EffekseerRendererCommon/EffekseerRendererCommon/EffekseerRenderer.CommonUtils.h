@@ -838,7 +838,7 @@ struct MaterialShaderParameterGenerator
 			vsOffset += sizeof(float) * 4 * materialFile.GetUniformCount();
 
 			// TODO : remove magic number
-			vsOffset += sizeof(float) * 4 * 13 * materialFile.Gradients.size();
+			vsOffset += sizeof(float) * 4 * 13 * (int32_t)materialFile.Gradients.size();
 
 			VertexShaderUniformBufferSize = vsOffset;
 		}
@@ -864,7 +864,7 @@ struct MaterialShaderParameterGenerator
 			vsOffset += sizeof(float) * 4 * materialFile.GetUniformCount();
 
 			// TODO : remove magic number
-			vsOffset += sizeof(float) * 4 * 13 * materialFile.Gradients.size();
+			vsOffset += sizeof(float) * 4 * 13 * (int32_t)materialFile.Gradients.size();
 
 			VertexShaderUniformBufferSize = vsOffset;
 		}
@@ -905,7 +905,7 @@ struct MaterialShaderParameterGenerator
 		psOffset += sizeof(float) * 4 * materialFile.GetUniformCount();
 
 		// TODO : remove magic number
-		psOffset += sizeof(float) * 4 * 13 * materialFile.Gradients.size();
+		psOffset += sizeof(float) * 4 * 13 * (int32_t)materialFile.Gradients.size();
 
 		PixelShaderUniformBufferSize = psOffset;
 	}
