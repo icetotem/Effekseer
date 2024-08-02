@@ -1,6 +1,7 @@
 #pragma once
 
 #include "../Effekseer.InternalStruct.h"
+#include "../Utils/BinaryVersion.h"
 
 namespace Effekseer
 {
